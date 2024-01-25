@@ -1,0 +1,16 @@
+@baseUrl = http://localhost:8000
+
+POST {{baseUrl}}/orders HTTP/1.1
+Host: localhost:8000
+Content-Type: application/json
+
+{
+    "id":"123",
+    "price": 99.9,
+    "tax": 1.50
+}
+
+###
+
+GET http://localhost:8000/orders HTTP/1.1
+Host: localhost:8000
